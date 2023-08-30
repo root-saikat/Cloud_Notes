@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+i {
+  cursor: pointer;
+}
+
+.login-seg {
+  display: flex;
+  align-items: center;
+}
+
+.login-form,.signup-form, .addnewnote {
+  padding:5%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.addnewnote{
+  padding:3%;
+}
+
+.login-btn{
+  width: 120px;
+}
