@@ -17,7 +17,7 @@ const Navbar = () => {
     }, [location]);
 
     return (
-        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
                 <Link className="navbar-brand" to="/">Cloud_Notes</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ const Navbar = () => {
                     {!localStorage.getItem('token')?<form className="d-flex">
                         <Link className="btn btn-success btn-sm mx-1" to="/login" role="button">Login</Link>
                         <Link className="btn btn-success btn-sm mx-1" to="/signup" role="button">Signup</Link>
-                    </form>: <button onClick={handleLogout} className="btn btn-warning btn-sm mx-1" role="button">Logout</button>}
+                    </form>: <button onClick={handleLogout} className="btn btn-warning btn-sm mx-1" >Logout</button>}
                 </div>
             </div>
         </nav>

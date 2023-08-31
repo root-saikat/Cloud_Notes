@@ -18,7 +18,7 @@ const AddNote = (props) => {
         setNote({ ...note, [e.target.name]: e.target.value })
     }
     return (
-        <div className="container mb-4 mt-4">
+        <div className="container mb-4 mt-4 tosticky">
             <div className="row">
                 <div className="col addnewnote">
                     <h4>Add a new Note</h4>
